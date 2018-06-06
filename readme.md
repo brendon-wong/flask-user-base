@@ -1,10 +1,12 @@
-# Flask User Base
+# Flask-User-Base
 
-Flask User Base is a Flask boilerplate app that makes it easy to create a web application that can support users. The app only uses Flask and common Flask extensions to minimize the learning curve. The extension Flask-User handles all user related code including user registration, user login, email confirmation, and password resets so the developer can get started with writing application specific code. A secondary purpose of this repository is to demonstrate how to incorporate Flask-User in a Flask project.
+Flask-User-Base is a Flask boilerplate app that makes it easy to create a web application that can support users. The app only uses Flask and common Flask extensions to minimize the learning curve. The extension Flask-User handles all user related code including user registration, user login, email confirmation, and password resets so the developer can get started with writing application specific code. A secondary purpose of this repository is to demonstrate how to incorporate Flask-User in a Flask project.
 
 Flask-User has been implemented in the models to support all optional data-models including multiple email accounts per user and user roles. These can be easily changed if needed by referring to the Flask-User [data-models documentation](http://flask-user.readthedocs.io/en/latest/data_models.html). Flask-User's built in templates have been duplicated in a directory in the application's primary templates folder to allow for Flask-User's templates to be customized if desired, as documented [here](http://flask-user.readthedocs.io/en/latest/unused.html#customizingformtemplates). If no customization is desired, all Flask-User templates can be removed from the templates folder.
 
 This app can be deployed on Heroku immediately and includes the Heroku-related files `Procfile` and `runtime.txt`. These files can be removed if Heroku deployment is not needed.
+
+Inside the config.py files and the setup.py file, the app is referred to as "Project." A case sensitive search and "replace all" operation in the project's root directory is all that is needed to customize the name of the app.
 
 The following instructions are for MacOS. See the [Installation](https://flask-user.readthedocs.io/en/latest/installation.html) part of the Flask documentation to run the app on other operating systems.
 

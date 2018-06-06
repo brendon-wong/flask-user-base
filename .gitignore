@@ -94,7 +94,7 @@ local_settings.py
 # instance/
 .webassets-cache
 
-# Flask Project-specific
+# Ignore local testing database
 .db
 
 # Scrapy stuff:
