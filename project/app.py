@@ -67,12 +67,14 @@ def register_extensions(app):
     # Flask-Admin
     admin = Admin(app, name='Admin Dashboard', template_mode='bootstrap3')
     # Flask_Admin: Create custom model view class
+
     class RestrictedModelView(ModelView):
         # Display primary keys
         column_display_pk = True
         # Hide admin pages by overwriting Flask-Admin's is_accessible function
+
         def is_accessible(self):
-            if not current_user.is_authenticated: 
+            if not current_user.is_authenticated:
                 return False
             return current_user.has_roles('admin')
         """
@@ -86,12 +88,13 @@ def register_extensions(app):
     admin.add_view(RestrictedModelView(Role, db.session))
     admin.add_view(RestrictedModelView(UserRoles, db.session))
     # Flask-Admin: Protect admin page
+
     @app.before_first_request
     def restrict_admin_url():
         endpoint = 'admin.index'
         url = url_for(endpoint)
         admin_index = app.view_functions.pop(endpoint)
-        
+
         @app.route(url, endpoint=endpoint)
         @roles_required('admin')
         def secure_admin_index():
@@ -109,7 +112,3 @@ def register_blueprints(app):
     app.register_blueprint(users)
     app.register_blueprint(main)
     return None
-
-    
-# def register_commands(app):
-    """Register Click commands."""
