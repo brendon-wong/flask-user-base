@@ -95,7 +95,7 @@ local_settings.py
 .webassets-cache
 
 # Ignore local testing database
-.db
+*.db
 
 # Scrapy stuff:
 .scrapy
