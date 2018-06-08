@@ -10,7 +10,6 @@
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -29,13 +28,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-### Flask
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
 
 # C extensions
 *.so
@@ -90,12 +82,20 @@ coverage.xml
 *.log
 local_settings.py
 
-# Flask stuff:
+### Flask
 # instance/
 .webassets-cache
 
-# Ignore local testing database
+# Flask migrations
+migrations/
+
+# Database
 *.db
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Scrapy stuff:
 .scrapy

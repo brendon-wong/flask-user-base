@@ -14,7 +14,7 @@ The following instructions are for MacOS. See the [Installation](https://flask-u
 1. `git clone` this repository
 2. `python3 -m venv venv` to create a new virtual environment
 3. `. venv/bin/activate` to activate the virtual environment (deactivate the virtual environment with `deactivate`)
-4. `pip install -r requirements.txt` to install/update all requirements
+4. `pip3 install -r requirements.txt` to install/update all requirements
 5. `pip3 install --editable .` in the root directory to install the application package
 
 ## To run the application:
