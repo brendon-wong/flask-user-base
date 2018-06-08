@@ -8,7 +8,7 @@ This app can be deployed on Heroku immediately and includes the Heroku-related f
 
 Inside the config.py files and the setup.py file, the app is referred to as "Project." A case sensitive search and "replace all" operation in the project's root directory is all that is needed to customize the name of the app.
 
-The following instructions are for MacOS. See the [Installation](https://flask-user.readthedocs.io/en/latest/installation.html) part of the Flask documentation to run the app on other operating systems.
+The following instructions are for MacOS. See the [Installation](http://flask.pocoo.org/docs/latest/installation/) part of the Flask documentation to run the app on other operating systems.
 
 ## To set up the application:
 1. `git clone` this repository
